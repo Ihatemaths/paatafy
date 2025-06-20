@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music App Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="player">
+    <div class="cd" id="cd">
+      <img id="artist-img" src="" alt="Artist" />
+    </div>
+    <h2 id="song-title">Song Title</h2>
+    <h4 id="artist-name">Artist Name</h4>
+    <audio id="audio" controls></audio>
+    <div class="controls">
+      <button onclick="prevSong()">Previous</button>
+      <button onclick="togglePlay()" id="play-btn">Play</button>
+      <button onclick="nextSong()">Next</button>
+      <button onclick="toggleLoop()" id="loop-btn">Loop: Off</button>
+    </div>
+  </div>
+
+  <ul class="playlist" id="playlist"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
